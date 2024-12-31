@@ -1,0 +1,990 @@
+[
+  {
+    "ContainingType": "DigitalyAPI.Controllers.AccountController",
+    "Method": "ConfirmEmail",
+    "RelativePath": "api/Account/confirm-email",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "DigitalyAPI.Models.DTO.ConfirmEmailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.AccountController",
+    "Method": "ForgotUsernameOrPassword",
+    "RelativePath": "api/Account/forgot-username-or-password/{email}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.AccountController",
+    "Method": "Login",
+    "RelativePath": "api/Account/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "DigitalyAPI.Models.DTO.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DigitalyAPI.Models.DTO.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.AccountController",
+    "Method": "Logout",
+    "RelativePath": "api/Account/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.AccountController",
+    "Method": "RefreshUsertoken",
+    "RelativePath": "api/Account/refresh-token",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DigitalyAPI.Models.DTO.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.AccountController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/Account/refresh-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessToken",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "refreshToken",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DigitalyAPI.Models.DTO.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.AccountController",
+    "Method": "Register",
+    "RelativePath": "api/Account/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "DigitalyAPI.Models.DTO.RegisterDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DigitalyAPI.Models.DTO.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.AccountController",
+    "Method": "ResendEmailConfirmationLink",
+    "RelativePath": "api/Account/resend-email-confirmation-link/{email}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.AccountController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Account/reset-password",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "DigitalyAPI.Models.DTO.ResetPasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.AccountController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/Account/UpdateProfile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateDto",
+        "Type": "DigitalyAPI.Models.DTO.UpdateProfileDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ClientsController",
+    "Method": "AssignClientsToRecouvreur",
+    "RelativePath": "api/Clients/assign-clients-to-recouvreur",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DigitalyAPI.Models.DTO.AssignClientsToRecouvreurDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ClientsController",
+    "Method": "AssignClientToPortefeuille",
+    "RelativePath": "api/Clients/assign-to-portefeuille",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "DigitalyAPI.Models.DTO.AssignClientToPortefeuilleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ClientsController",
+    "Method": "GetClientsWithTotalImpaye",
+    "RelativePath": "api/Clients/clients-with-total-impaye",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ClientsController",
+    "Method": "CreateClient",
+    "RelativePath": "api/Clients/create-client",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DigitalyAPI.Models.DTO.CreateClientRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ClientsController",
+    "Method": "DeleteClient",
+    "RelativePath": "api/Clients/delete-client/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ClientsController",
+    "Method": "GetAllClients",
+    "RelativePath": "api/Clients/get-all-clients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ClientsController",
+    "Method": "GetAllClientsWithAccounts",
+    "RelativePath": "api/Clients/get-all-clients-with-accounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ClientsController",
+    "Method": "GetAllClientsWithImpayes",
+    "RelativePath": "api/Clients/get-client-withimpayes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ClientsController",
+    "Method": "GetClientById",
+    "RelativePath": "api/Clients/get-client/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ClientsController",
+    "Method": "GetClientAccoutnById",
+    "RelativePath": "api/Clients/get-clientwithaccountbank/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ClientsController",
+    "Method": "GetClientWithImpayes",
+    "RelativePath": "api/Clients/get-clientwithimpayes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ClientsController",
+    "Method": "GetClientsWithImpayesByPortefeuille",
+    "RelativePath": "api/Clients/impayes/portefeuille/{portefeuilleId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "portefeuilleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ClientsController",
+    "Method": "UpdateClient",
+    "RelativePath": "api/Clients/update-client/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "DigitalyAPI.Models.DTO.UpdateClientRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.CompteBancaireController",
+    "Method": "CreateCompte",
+    "RelativePath": "api/CompteBancaire/create-compte/{clientId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "compteBancaireDto",
+        "Type": "DigitalyAPI.Models.DTO.CompteBancaireCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.CompteBancaireController",
+    "Method": "DeleteCompte",
+    "RelativePath": "api/CompteBancaire/delete-compte/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.CompteBancaireController",
+    "Method": "GetAllComptes",
+    "RelativePath": "api/CompteBancaire/get-all-comptes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.CompteBancaireController",
+    "Method": "GetCompteById",
+    "RelativePath": "api/CompteBancaire/get-compte/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.CompteBancaireController",
+    "Method": "UpdateCompte",
+    "RelativePath": "api/CompteBancaire/update-compte/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateRequest",
+        "Type": "DigitalyAPI.Controllers.CompteBancaireController\u002BUpdateCompteBancaireRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ImpayeController",
+    "Method": "GetNombreImpayes",
+    "RelativePath": "api/Impaye/{clientId}/nbre-impayes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ImpayeController",
+    "Method": "AddImpaye",
+    "RelativePath": "api/Impaye/add-impaye",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "impayeDto",
+        "Type": "DigitalyAPI.Models.DTO.CreateImpayeRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ImpayeController",
+    "Method": "AffecterImpayeAuPrestataire",
+    "RelativePath": "api/Impaye/affecter-prestataire",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DigitalyAPI.Models.DTO.AffectationPresRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ImpayeController",
+    "Method": "DeleteImpaye",
+    "RelativePath": "api/Impaye/delete-impaye/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ImpayeController",
+    "Method": "GetAllImpaye",
+    "RelativePath": "api/Impaye/get-all-impayes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ImpayeController",
+    "Method": "GetImpayeById",
+    "RelativePath": "api/Impaye/get-impaye/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ImpayeController",
+    "Method": "GetImpayesByPrestataire",
+    "RelativePath": "api/Impaye/getimapayesandclients-by-prestataire/{prestataireId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "prestataireId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.ImpayeController",
+    "Method": "UpdateImpaye",
+    "RelativePath": "api/Impaye/update-impaye/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "impaye",
+        "Type": "DigitalyAPI.Models.Domain.Impaye",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.PortefeuillesController",
+    "Method": "AffectRecouvreursToPortefeuille",
+    "RelativePath": "api/Portefeuilles/affect-recouvreurs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DigitalyAPI.Models.DTO.AffectRecouvreursToPortefeuilleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.PortefeuillesController",
+    "Method": "CreatePortefeuilleAndAssignRecouvreurs",
+    "RelativePath": "api/Portefeuilles/create-and-assign",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DigitalyAPI.Models.DTO.PortefeuilleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.PortefeuillesController",
+    "Method": "CreatePortefeuille",
+    "RelativePath": "api/Portefeuilles/create-portefeuille",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DigitalyAPI.Models.DTO.PortefeuilleCreateResponseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.PortefeuillesController",
+    "Method": "DeletePortefeuille",
+    "RelativePath": "api/Portefeuilles/delete-portefeuille/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.PortefeuillesController",
+    "Method": "GetAllPortefeuilles",
+    "RelativePath": "api/Portefeuilles/get-all-portefeuilles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.PortefeuillesController",
+    "Method": "GetPortefeuilleById",
+    "RelativePath": "api/Portefeuilles/get-portefeuille/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.PortefeuillesController",
+    "Method": "GetRecouvreursByPortefeuille",
+    "RelativePath": "api/Portefeuilles/get-recouvreurs-by-portefeuille/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.PrestatairesController",
+    "Method": "CreatePrestataire",
+    "RelativePath": "api/Prestataires/create-prestataire",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DigitalyAPI.Models.DTO.PrestataireDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.PrestatairesController",
+    "Method": "DeletePrestataire",
+    "RelativePath": "api/Prestataires/delete-prestataire/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.PrestatairesController",
+    "Method": "GetAllPrestataires",
+    "RelativePath": "api/Prestataires/get-all-prestataires",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.PrestatairesController",
+    "Method": "GetImpayesByPrestataireId",
+    "RelativePath": "api/Prestataires/get-impayes-by-prestataire/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.PrestatairesController",
+    "Method": "GetPrestataireById",
+    "RelativePath": "api/Prestataires/get-prestataire/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.PrestatairesController",
+    "Method": "UpdatePrestataire",
+    "RelativePath": "api/Prestataires/update-prestataire/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "DigitalyAPI.Models.DTO.PrestataireDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.RecouvreursController",
+    "Method": "GetImpayesByRecouvreur",
+    "RelativePath": "api/Recouvreurs/{recouvreurId}/impayes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recouvreurId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.RecouvreursController",
+    "Method": "CreateRecouvreur",
+    "RelativePath": "api/Recouvreurs/create-recouvreur",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DigitalyAPI.Models.DTO.CreateRecouvreurDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.RecouvreursController",
+    "Method": "CreateRecouvreurrr",
+    "RelativePath": "api/Recouvreurs/create-recouvreurrrrr",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DigitalyAPI.Models.DTO.CreateRecouvreurDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.RecouvreursController",
+    "Method": "DeleteRecouvreur",
+    "RelativePath": "api/Recouvreurs/delete-recouvreur/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.RecouvreursController",
+    "Method": "GetAllRecouvreurs",
+    "RelativePath": "api/Recouvreurs/get-all-recouvreurs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.RecouvreursController",
+    "Method": "GetAllRecouvreursTotalImpaye",
+    "RelativePath": "api/Recouvreurs/get-all-recouvreurs-total-impayes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.RecouvreursController",
+    "Method": "GetRecouvreurByUserId",
+    "RelativePath": "api/Recouvreurs/get-recouvreur-by-userid/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.RecouvreursController",
+    "Method": "GetRecouvreurById",
+    "RelativePath": "api/Recouvreurs/get-recouvreur/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.RecouvreursController",
+    "Method": "GetRecouvreursDisponibles",
+    "RelativePath": "api/Recouvreurs/get-recouvreurs-disponibles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.RecouvreursController",
+    "Method": "GetRecouvreurInformationById",
+    "RelativePath": "api/Recouvreurs/recouvreur-information/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.RecouvreursController",
+    "Method": "GetTotalImpayeByRecouvreur",
+    "RelativePath": "api/Recouvreurs/recouvreur-total-impaye/{recouvreurId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recouvreurId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.RecouvreursController",
+    "Method": "GetRecouvreursWithClientImpayes",
+    "RelativePath": "api/Recouvreurs/recouvreurs-impayes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DigitalyAPI.Controllers.RecouvreursController",
+    "Method": "UpdateRecouvreur",
+    "RelativePath": "api/Recouvreurs/update-recouvreur/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "DigitalyAPI.Models.DTO.UpdateRecouvreurRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
